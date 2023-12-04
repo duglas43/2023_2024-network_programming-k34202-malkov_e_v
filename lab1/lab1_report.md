@@ -42,7 +42,7 @@ sudo pip3 install ansible
 В результате получим установленный Ansible:
 
 <p align="center" style="padding: 0; margin:0; ">
-<img src="./img/Screenshot_1.png" alt="drawing" width="500" />
+<img src="./img/Screenshot_1.png" alt="drawing" />
  <p align="center" style="padding: 0; margin:0; ">Рисунок 1 - Установленный Ansible</p>
 </p>
 
@@ -60,17 +60,17 @@ apt update && apt -y install openvpn-as
 В результате работы команды получим ссылку на веб-интерфейс, а также логин и пароль администратора:
 
 <p align="center" style="padding: 0; margin:0; ">
-<img src="./img/Screenshot_2.png" alt="drawing" width="500" />
+<img src="./img/Screenshot_2.png" alt="drawing" />
     <p align="center" style="padding: 0; margin:0; ">Рисунок 2 - Ссылка на веб-интерфейс, логин и пароль администратора</p>
 </p>
 Далее переходим по ссылке указанной в консоли и авторизуемся с помощью логина и пароля администратора. Введём Activation Key, который можно получить на сайте https://openvpn.net/. В результате получаем возможность подключить 2 клиента к VPN серверу.
 <p align="center" style="padding: 0; margin:0; ">
-<img src="./img/Screenshot_3.png" alt="drawing" width="500" />
+<img src="./img/Screenshot_3.png" alt="drawing" />
     <p align="center" style="padding: 0; margin:0; ">Рисунок 3 - Веб-интерфейс OpenVPN Access Server</p>
 </p>
 Далее создадим пользователя, который будет использоваться для подключения к VPN серверу, а также скачаем конфигурационный файл для подключения к VPN серверу. Для этого перейдём во вкладку User Permissions и нажмём на кнопку Add User, после чего перейдём во вкладку Users Profiles и сформируем конфигурационный файл для подключения к VPN серверу.
 <p align="center" style="padding: 0; margin:0; ">
-<img src="./img/Screenshot_4.png" alt="drawing" width="500" />
+<img src="./img/Screenshot_4.png" alt="drawing" />
     <p align="center" style="padding: 0; margin:0; ">Рисунок 4 - Получение конфигурационного файла для подключения к VPN серверу</p>
 </p>
 
@@ -89,12 +89,12 @@ certificate import file-name=<FILENAME>
 - User: zenam
 - Certificate: Ранее полученный сертификат
 <p align="center" style="padding: 0; margin:0; ">
-<img src="./img/Screenshot_6.png" alt="drawing" width="500" />
+<img src="./img/Screenshot_6.png" alt="drawing" />
     <p align="center" style="padding: 0; margin:0; ">Рисунок 4 - Создание сетевого интерфейса OVPN client</p>
 </p>
 Как мы можем заметить на картинке выше соединение было успешно создано. Также проверим соединение, пропинговав устройство из локальной сети. Пинг проходит успешно. 
 <p align="center" >
-<img src="./img/Screenshot_7.png" alt="drawing" width="500" />
+<img src="./img/Screenshot_7.png" alt="drawing" />
     <p align="center" style="padding: 0; margin:0; ">Рисунок 5 - ping устройства из внутренней</p>
 </p>
 <p>
