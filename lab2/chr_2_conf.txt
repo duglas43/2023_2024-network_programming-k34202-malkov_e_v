@@ -1,0 +1,121 @@
+ok: [chr_2] => {
+    "output_ospf": {
+        "ansible_facts": {
+            "ansible_net_all_ipv4_addresses": [
+                "100.125.24.219",
+                "172.27.224.11"
+            ],
+            "ansible_net_all_ipv6_addresses": [
+                "fe80::a00:27ff:feeb:c914",
+                "fe80::41e2:72eb:3476:5143",
+                "fe80::b010:ebff:fe3f:4c91"
+            ],
+            "ansible_net_arch": "x86_64",
+            "ansible_net_cpu_load": "2%",
+            "ansible_net_gather_subset": [
+                "default",
+                "interfaces"
+            ],
+            "ansible_net_hostname": "MikroTik",
+            "ansible_net_interfaces": {
+                "Lo": {
+                    "actual-mtu": "1500",
+                    "id": "3",
+                    "ifindex": "8",
+                    "ifname": "br0",
+                    "ipv6": [
+                        {
+                            "address": "fe80::b010:ebff:fe3f:4c91",
+                            "subnet": "64"
+                        }
+                    ],
+                    "l2mtu": "65535",
+                    "last-link-up-time": "2023-12-04",
+                    "link-downs": "0",
+                    "mac-address": "B2:10:EB:3F:4C:91",
+                    "mtu": "auto",
+                    "name": "Lo",
+                    "type": "bridge"
+                },
+                "ether1": {
+                    "actual-mtu": "1500",
+                    "default-name": "ether1",
+                    "id": "1",
+                    "ifindex": "6",
+                    "ifname": "eth0",
+                    "ipv4": [
+                        {
+                            "address": "100.125.24.219",
+                            "subnet": "19"
+                        }
+                    ],
+                    "ipv6": [
+                        {
+                            "address": "fe80::a00:27ff:feeb:c914",
+                            "subnet": "64"
+                        }
+                    ],
+                    "last-link-up-time": "2023-12-04",
+                    "link-downs": "0",
+                    "mac-address": "08:00:27:EB:C9:14",
+                    "mtu": "1500",
+                    "name": "ether1",
+                    "type": "ether"
+                },
+                "ovpn-out1": {
+                    "actual-mtu": "1500",
+                    "id": "2",
+                    "ifindex": "7",
+                    "ifname": "ppp-o2",
+                    "ipv4": [
+                        {
+                            "address": "172.27.224.11",
+                            "subnet": "20"
+                        }
+                    ],
+                    "ipv6": [
+                        {
+                            "address": "fe80::41e2:72eb:3476:5143",
+                            "subnet": "64"
+                        }
+                    ],
+                    "last-link-up-time": "2023-12-04",
+                    "link-downs": "0",
+                    "mac-address": "02:54:27:89:D8:F5",
+                    "mtu": "1500",
+                    "name": "ovpn-out1",
+                    "type": "ovpn-out"
+                }
+            },
+            "ansible_net_model": null,
+            "ansible_net_neighbors": [
+                {
+                    "address": "100.125.11.168",
+                    "address4": "100.125.11.168",
+                    "address6": "fe80::a00:27ff:fea9:9b52",
+                    "age": "43s",
+                    "board": "CHR",
+                    "discovered-by": "cdp",
+                    "identity": "MikroTik",
+                    "interface": "ether1",
+                    "interface-name": "ether1",
+                    "ipv6": "yes",
+                    "mac-address": "08:00:27:A9:9B:52",
+                    "platform": "MikroTik",
+                    "software-id": "AMGetEV1VSC",
+                    "system-caps": "bridge",
+                    "system-caps-enabled": "bridge",
+                    "system-description": "MikroTik",
+                    "unpack": "none",
+                    "uptime": "8m7s",
+                    "version": "7.12.1"
+                }
+            ],
+            "ansible_net_serialnum": null,
+            "ansible_net_uptime": "8m59s",
+            "ansible_net_version": "7.12.1 (stable)"
+        },
+        "changed": false,
+        "failed": false
+    }
+}
