@@ -1,0 +1,547 @@
+No config file found; using defaults
+Using inventory plugin 'ansible_collections.netbox.netbox.plugins.inventory.nb_inventory' to process inventory source '/etc/ansible/netbox_device_info.yml'
+Fetching: https://31.129.107.216:8000/api/status
+Fetching: https://31.129.107.216:8000/api/dcim/devices/?limit=0&exclude=config_context
+Fetching: https://31.129.107.216:8000/api/virtualization/virtual-machines/?limit=0&exclude=config_context
+Fetching: https://31.129.107.216:8000/api/dcim/sites/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/regions/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/site-groups/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/locations/?limit=0
+Fetching: https://31.129.107.216:8000/api/tenancy/tenants/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/device-roles/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/platforms/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/device-types/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/manufacturers/?limit=0
+Fetching: https://31.129.107.216:8000/api/virtualization/clusters/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/interfaces/?limit=0
+Fetching: https://31.129.107.216:8000/api/ipam/services/?limit=0
+Fetching: https://31.129.107.216:8000/api/dcim/racks/?limit=0
+Fetching: https://31.129.107.216:8000/api/virtualization/interfaces/?limit=0
+Fetching: https://31.129.107.216:8000/api/ipam/ip-addresses/?limit=0&assigned_to_interface=true
+all:
+  vars: 
+    ansible_user: admin
+    ansible_password: admin
+    ansible_connection: network_cli
+    ansible_network_os: routeros
+  children:
+    device_roles_router:
+      hosts:
+        CHR_1:
+          ansible_host: 172.27.224.9
+          custom_fields: {}
+          device_roles:
+          - router
+          device_types:
+          - microtik_type
+          interfaces:
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: ''
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2023-12-05T08:13:03.963446Z'
+            custom_fields: {}
+            description: ''
+            device:
+              display: CHR_1
+              id: 1
+              name: CHR_1
+              url: https://31.129.107.216:8000/api/dcim/devices/1/
+            display: Lo
+            duplex: null
+            enabled: true
+            id: 1
+            ip_addresses:
+            - address: 1.1.1.1/32
+              comments: ''
+              created: '2023-12-05T08:10:13.585307Z'
+              custom_fields: {}
+              description: chr_1
+              display: 1.1.1.1/32
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 3
+              last_updated: '2023-12-05T08:16:34.032208Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: https://31.129.107.216:8000/api/ipam/ip-addresses/3/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2023-12-05T08:13:03.963466Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: Lo
+            parent: null
+            poe_mode: null
+            poe_type: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Bridge
+              value: bridge
+            untagged_vlan: null
+            url: https://31.129.107.216:8000/api/dcim/interfaces/1/
+            vdcs: []
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: ''
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2023-12-05T09:32:50.790173Z'
+            custom_fields: {}
+            description: ''
+            device:
+              display: CHR_1
+              id: 1
+              name: CHR_1
+              url: https://31.129.107.216:8000/api/dcim/devices/1/
+            display: Lo3
+            duplex: null
+            enabled: true
+            id: 5
+            ip_addresses:
+            - address: 3.3.3.3/32
+              comments: ''
+              created: '2023-12-05T09:31:42.991275Z'
+              custom_fields: {}
+              description: ''
+              display: 3.3.3.3/32
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 5
+              last_updated: '2023-12-05T09:36:07.163703Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: https://31.129.107.216:8000/api/ipam/ip-addresses/5/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2023-12-05T09:32:50.790676Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: Lo3
+            parent: null
+            poe_mode: null
+            poe_type: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Bridge
+              value: bridge
+            untagged_vlan: null
+            url: https://31.129.107.216:8000/api/dcim/interfaces/5/
+            vdcs: []
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: ''
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2023-12-05T08:13:44.355095Z'
+            custom_fields: {}
+            description: ''
+            device:
+              display: CHR_1
+              id: 1
+              name: CHR_1
+              url: https://31.129.107.216:8000/api/dcim/devices/1/
+            display: ovpn-out1
+            duplex: null
+            enabled: true
+            id: 2
+            ip_addresses:
+            - address: 172.27.224.9/20
+              comments: ''
+              created: '2023-12-05T08:09:26.478077Z'
+              custom_fields: {}
+              description: chr_1
+              display: 172.27.224.9/20
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 1
+              last_updated: '2023-12-05T08:59:31.365500Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: https://31.129.107.216:8000/api/ipam/ip-addresses/1/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2023-12-05T08:13:44.355124Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: ovpn-out1
+            parent: null
+            poe_mode: null
+            poe_type: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Virtual
+              value: virtual
+            untagged_vlan: null
+            url: https://31.129.107.216:8000/api/dcim/interfaces/2/
+            vdcs: []
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          is_virtual: false
+          local_context_data:
+          - null
+          locations: []
+          manufacturers:
+          - mikrotik
+          primary_ip4: 172.27.224.9
+          regions: []
+          serial: ''
+          services: []
+          site_groups: []
+          sites:
+          - mikrotic_site
+          status:
+            label: Active
+            value: active
+          tags: []
+        CHR_2:
+          ansible_host: 172.27.224.8
+          custom_fields: {}
+          device_roles:
+          - router
+          device_types:
+          - microtik_type
+          interfaces:
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: ''
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2023-12-05T08:14:00.322789Z'
+            custom_fields: {}
+            description: ''
+            device:
+              display: CHR_2
+              id: 2
+              name: CHR_2
+              url: https://31.129.107.216:8000/api/dcim/devices/2/
+            display: Lo
+            duplex: null
+            enabled: true
+            id: 3
+            ip_addresses:
+            - address: 2.2.2.2/32
+              comments: ''
+              created: '2023-12-05T08:10:50.329006Z'
+              custom_fields: {}
+              description: chr_2
+              display: 2.2.2.2/32
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 4
+              last_updated: '2023-12-05T08:16:54.873538Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: https://31.129.107.216:8000/api/ipam/ip-addresses/4/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2023-12-05T08:14:00.323159Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: Lo
+            parent: null
+            poe_mode: null
+            poe_type: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Bridge
+              value: bridge
+            untagged_vlan: null
+            url: https://31.129.107.216:8000/api/dcim/interfaces/3/
+            vdcs: []
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: ''
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2023-12-05T09:35:47.574351Z'
+            custom_fields: {}
+            description: ''
+            device:
+              display: CHR_2
+              id: 2
+              name: CHR_2
+              url: https://31.129.107.216:8000/api/dcim/devices/2/
+            display: Lo4
+            duplex: null
+            enabled: true
+            id: 6
+            ip_addresses:
+            - address: 4.4.4.4/32
+              comments: ''
+              created: '2023-12-05T09:31:55.248715Z'
+              custom_fields: {}
+              description: ''
+              display: 4.4.4.4/32
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 6
+              last_updated: '2023-12-05T09:36:23.042717Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: https://31.129.107.216:8000/api/ipam/ip-addresses/6/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2023-12-05T09:35:47.574381Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: Lo4
+            parent: null
+            poe_mode: null
+            poe_type: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Bridge
+              value: bridge
+            untagged_vlan: null
+            url: https://31.129.107.216:8000/api/dcim/interfaces/6/
+            vdcs: []
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: ''
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2023-12-05T08:14:21.797350Z'
+            custom_fields: {}
+            description: ''
+            device:
+              display: CHR_2
+              id: 2
+              name: CHR_2
+              url: https://31.129.107.216:8000/api/dcim/devices/2/
+            display: ovpn-out1
+            duplex: null
+            enabled: true
+            id: 4
+            ip_addresses:
+            - address: 172.27.224.8/20
+              comments: ''
+              created: '2023-12-05T08:09:45.292172Z'
+              custom_fields: {}
+              description: chr_2
+              display: 172.27.224.8/20
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 2
+              last_updated: '2023-12-05T08:59:48.401340Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: https://31.129.107.216:8000/api/ipam/ip-addresses/2/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2023-12-05T08:14:21.797396Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: ovpn-out1
+            parent: null
+            poe_mode: null
+            poe_type: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Virtual
+              value: virtual
+            untagged_vlan: null
+            url: https://31.129.107.216:8000/api/dcim/interfaces/4/
+            vdcs: []
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          is_virtual: false
+          local_context_data:
+          - null
+          locations: []
+          manufacturers:
+          - mikrotik
+          primary_ip4: 172.27.224.8
+          regions: []
+          serial: ''
+          services: []
+          site_groups: []
+          sites:
+          - mikrotic_site
+          status:
+            label: Active
+            value: active
+          tags: []
