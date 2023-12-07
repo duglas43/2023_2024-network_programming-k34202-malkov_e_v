@@ -110,6 +110,17 @@ apply {
     }
 ```
 
+Далее напишем депарсер, который выбирает порядок вставки полей в исходящий пакет:
+
+```bash
+control MyDeparser(packet_out packet, in headers hdr) {
+    apply {
+        packet.emit(hdr.ethernet);
+        packet.emit(hdr.ipv4);
+    }
+}
+```
+
 Снова запустим тестовую среду и проверим работу сети. Пинги проходят, сеть работает правильно:
 
 <p align="center" style="padding: 0; margin:0; ">
