@@ -117,6 +117,13 @@ ansible -i hosts.ini -m ping default_hosts
 Рисунок 6 -  Проверка связности между хостами и OSPF
     </p>
 </p>
+Схема (Рисунок 7):
+<p align="center" style="padding: 0; margin:0; ">
+<img src="./img/Screenshot_13.png" alt="drawing" />
+    <p align="center" style="padding: 0; margin:0; ">
+      Рисунок 7 -  Схема
+    </p>
+</p>
 Полную  информацию о хостах можно получить с помощью найти в выводе playbook:
 
 [CHR_1_conf](./chr_1_conf.txt)

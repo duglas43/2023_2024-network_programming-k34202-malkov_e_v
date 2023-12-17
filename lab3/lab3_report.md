@@ -287,6 +287,12 @@ ansible-inventory -v --list -y -i  netbox_device_info.yml > nb_inventory.yml
 </p>
 Как мы можем заметить, серийный номер был успешно добавлен в Netbox.
 
+Схема сети:
+
+<p align="center" style="padding: 0; margin:0; ">
+<img src="../lab2/img/Screenshot_13.png" alt="drawing" />
+</p>
+
 ## Вывод
 
 В результате выполнения лабораторной работы был развёрнут Netbox, заполнена информация об устройствах, а также был написан скрипт для сбора информации об устройствах и playbook для сбора данных с роутеров в Netbox.

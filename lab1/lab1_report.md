@@ -98,6 +98,12 @@ certificate import file-name=<FILENAME>
     <p align="center" style="padding: 0; margin:0; ">Рисунок 5 - ping устройства из внутренней</p>
 </p>
 <p>
+Диаграмма полученной сети (Рисунок 6): 
+</p>
+<p align="center" >
+<img src="./img/Screenshot_8.png" alt="drawing" />
+    <p align="center" style="padding: 0; margin:0; ">Рисунок 6 - Диаграмма полученной сети</p>
+</p>
 
 ## Вывод
 
